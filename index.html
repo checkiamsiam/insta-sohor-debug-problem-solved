@@ -70,9 +70,50 @@
         <h1>Reported posts</h1>
       </div>
     </main>
-    <footer></footer>
+    <section class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How does Js work in browser?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>JS is a high-level interpreting language we know that.</strong> browser use v8 engine to read js file.  And v8 engine use a compiler to read js file. browser make a render tree to show output . js is very smart language so browser can easyly read her.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  what doest event loop do?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>in asynchronous expression,</strong> every js code can't wait for others to run. fetch ,setTimeOut etc are good example for this case. in that case js use event loop to handle this. js divide all synchronous and asynchronous code in heap an ques . loop is rounding and code run by peaking one by one item from 2 sectors.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Local storage vs session storage?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>local storage</strong> works for storing permanent data. on the other hand session storage store temporary data.when close tab or browser every session storage will clear . but in local storage data won't clear until anyone remove it manually.
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer class="bg-dark text-white text-center mt-2">@Secure Service</footer>
 
     <!-- add javascript  file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
